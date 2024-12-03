@@ -46,7 +46,7 @@ def chapter_5():
                     chapter_5()
 
             elif choice == 2:
-                if 6>=stats.life["life points"]:
+                if stats.life["life points"]>=6:
                     print("use berry?")
                     berry = int(input("Enter 1 to use berry, enter 2 to not use berry: "))
                     if berry==1:
@@ -83,7 +83,7 @@ def chapter_5():
                     chapter_5()
 
             elif choice == 3:
-                if 8>=stats.life["life points"]:
+                if stats.life["life points"]>=8:
                     print("use berry?")
                     berry = int(input("Enter 1 to use berry, enter 2 to not use berry: "))
                     if berry==1:
@@ -103,7 +103,7 @@ def chapter_5():
                         print("you need",(thecount),"attack points to kill THE COUNT")
                         if stats.atk["Attack"]> thecount: 
                             print("THE COUNT has been killed")
-                            stats.life["life points"]+=3
+                            stats.life["life points"]+=8
                             continue
                         else:
                             print("EDDY doesn't have enough ATTACK points to kill THE COUNT")
@@ -129,4 +129,5 @@ def chapter_5():
                     chapter_5()
         except ValueError:
             print("enter number")
+        break
 chapter_5()
