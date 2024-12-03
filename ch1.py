@@ -64,5 +64,6 @@ def chapter_1():
 
         except ValueError:
              print("try again")
+        break
 
 chapter_1()
