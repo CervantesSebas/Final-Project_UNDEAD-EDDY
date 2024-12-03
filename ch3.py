@@ -69,7 +69,7 @@ def chapter_3 ():
                     stats.life["life points"] += 1
                     print("That was nice of EDDY")
                     print("+1 life point, +1 Berry")
-                    continue
+                    chapter_3()
                     
                 elif choice == 4:
                     if stats.life["life points"]>= 6:
@@ -84,4 +84,5 @@ def chapter_3 ():
                     
             except ValueError:
                 print("enter number")
+            break
 chapter_3()
